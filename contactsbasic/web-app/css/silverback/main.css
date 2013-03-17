@@ -1,0 +1,465 @@
+body{background:#fff}
+
+#header-wrapper{background:#525253 url('../images/bodybg.png') top center no-repeat;}
+#header{height:95px; width:900px; margin:auto; position:relative;}
+
+a#logo,
+#searchbox-wrapper,
+#searchbox-wrapper a{background:url('../images/headerassets.png') no-repeat; display:block; position:absolute;}
+
+#searchbox-wrapper{height:26px; width:161px; background-position:-29px -5px; top:3px; right:5px;}
+#searchbox-wrapper:hover{background-position:-29px -31px;}
+#searchbox-wrapper input[type="text"]{border:none; width:128px; height:17px; position:absolute; top:3px; font-size:12px; color:#fff; left:4px;background:transparent;}
+#searchbox-wrapper a{background-position: -3px -7px; height:20px; width:25px; top:3px; right:2px; text-indent:-10000px;}
+#searchbox-wrapper a:hover{background-position: -3px -33px; height:20px; width:25px;}
+
+a#logo{background-position:-200px -33px;display:block; height:29px; width:128px; text-indent:-10000px; top:5px; left:0px;}
+
+
+#membermenu ul{position:absolute; top:7px; right:160px;width:190px; }
+#membermenu ul li{float:left; margin:0px 7px 0px 7px;}
+#membermenu ul li a{color:#cececf; text-transform:uppercase; text-decoration:none; font-size:10px; font-weight:bold;}
+#membermenu ul li a:hover{color:#fff;}
+
+#welcome{position:absolute; top:24px; left:250px; color:#cececf; text-transform:uppercase; text-align:right; font-size:9px; width:190px;}
+#welcome a{color:#fff; text-transform:uppercase; font-size:9px; text-decoration:none;}
+#welcome a:hover{text-decoration:underline;}
+
+#profilemenu{position:absolute; right:0px; top:65px;}
+#profilemenu li{float:left;}
+
+#profilemenu li a{height:22px; padding:8px 7px 0px 7px; margin:0px 1px 0px 0px;display:block;  background:#969697; font-weight:bold; text-decoration:none; color:#fff; text-transform:uppercase; font-size:10px;}
+#profilemenu li a#dashboard{background:url('../images/headerassets.png') -195px -1px no-repeat; height:22px; width:71px; padding:8px 7px 0px 50px;}
+
+/*profile menu hovers */
+#profilemenu li a:hover, #profilemenu li a.selected{background:#fff; color:#212122;}
+#profilemenu li a#dashboard:hover,#profilemenu li a#dashboard.selected{background-position: -330px -1px; color:#212122;}
+
+#profilemenu li a.strikethru{text-decoration:line-through;background:#969697}
+#profilemenu li a.strikethru:hover{text-decoration:line-through;background:#969697; color:#fff}
+
+#profile-picture-wrapper{/*background:url('images/headerassets.png') -467px -2px no-repeat;*/ background:#fff; height:40px; width:40px; position:absolute; bottom:7px; left:0px; border:solid 3px #fff; }
+#profile-picture-wrapper img{margin:0px 0px 0px 0px; }
+
+#profileheader{position:absolute; bottom:7px; color:#fff; left:52px;}
+#profileheader h1{color:#fff; line-height:1.0em; padding:0px; margin:0px; font-size:25px;}
+#profileheader p{color:#fff; line-height:1.0em; font-size:15px; padding:0px; margin:0px;}
+
+#content-container{width:100%; background:#fff; min-height:400px; padding:15px 0px 50px 0px}
+#content{width:900px; margin:auto;}
+
+#dashboard-header{width:858px;  background:#f0f0f0; margin:auto; padding: 5px 21px 0px 21px; height:70px; position:relative;}
+#progressbar-wrapper{}
+#progressbar-wrapper p{font-size:9px; font-weight:bold;}
+#progressbar-wrapper p a{font-size:9px; font-weight:normal; text-transform:uppercase; padding:0px  7px 0px 7px; text-decoration:none; color:#197da1;}
+#cycle-status{position:absolute; top:0px; left:20px;}
+#cycle-ratio{position:absolute;top:0px; right:107px;}
+#current-cycle{position:absolute;top:0px; left:400px;}
+#cycle-links{position:absolute;bottom:0px; right:98px;}
+
+
+#progressbar{height:15px; }
+#progressbar #bar{height:25px; width:400px;}
+#percentage-value{font-size:23px; font-weight:bold;}
+#progressbar_pbText{background:#fff url('../images/percentagebg.png') top right no-repeat; height:75px; width:80px;  display:inline-block; position:absolute; right:0px; top:0px; margin-left:15px; }
+#progressbar_pbText #percentage-value{background:transparent; position:absolute; top:8px; right:25px;}
+
+#progressbar_pbText #percentage-value.percentage-red{color:#ff6235; right:30px;}
+#progressbar_pbText #percentage-value.percentage-orange{color:#ffa335; }
+#progressbar_pbText #percentage-value.percentage-blue{color:#2b7fad; }
+#progressbar_pbText #percentage-value.percentage-green{color:#27bd6d;right:21px;}
+
+
+#cyclesummary{background:url('../images/dashboard-headerbg.png') 320px -25px no-repeat;float:left; width:482px; padding:20px; border:solid 1px #ddd; margin-top:20px; position:relative;}
+#personalbests{background:url('../images/dash.png') 250px 25px no-repeat; float:right;padding:24px; width:277px; border:solid 1px #ddd; margin-top:20px;}
+#howtodashboard{background:#fdfde0; float:right;padding:24px; width:277px; border:solid 1px #ddd; margin-top:20px;}
+
+
+#cyclesummary h2, #personalbests h2{color:#2a2a2b; font-size:20px; font-weight:bold; padding:0px; margin:0px;line-height:1.0em;}
+#cyclesummary h2 span{display:block}
+#cyclesummary h2 span.label{display:inline; font-size:20px; font-weight:normal; }
+
+
+#cyclesummary table,#personalbests table{border-collapse:collapse; width:100%; margin:20px 0px; line-height:1.2em;}
+#cyclesummary table th,#personalbests table th{text-transform:uppercase; font-weight:bold; color:#999999; text-align:center;}
+#cyclesummary table th.left,#personalbests table th.left{text-align:left}
+#cyclesummary table td,#personalbests table td{text-align:center; padding:7px 0px;font-size:14px; color:#0b0b0b;}
+#cyclesummary table td.left,#personalbests table td.left{text-transform:uppercase; text-align:left;}
+#cyclesummary table td.large,#personalbests table td.large{text-transform:uppercase;border-top:solid 1px #d0d0d0; border-bottom:solid 1px #d0d0d0; vertical-align:middle;}
+#cyclesummary table td.left a, #cyclesummary table td.left span,#personalbests table td.left a, #personalbests table td.left span{text-transform:normal;font-size:11px;}
+#cyclesummary table td.strong,#personalbests table td.strong{font-weight:bold;}
+#cyclesummary table td a,#personalbests table td a{text-transform:none; color:#24698e; text-decoration:none;}
+#cyclesummary table td a:hover,#personalbests table td a:hover{ text-decoration:underline;}
+
+#cyclesummary table tr.completedworkouts{background:#f8f8f8;}
+#cyclesummary table tr.completedworkouts  td{font-size:10px; font-style:italic;}
+#cyclesummary table tr.completedworkouts  td.left{padding-left:15px; font-size:10px; background:url('../images/completed.png') 2px 2px no-repeat;}
+
+#completedlegend{ background:url('../images/completed.png') 2px 2px no-repeat; position:absolute; top:15px; right:20px; padding-left:30px; height: 30px; font-weight:bold; font-size:10px;}
+
+
+
+/*start of logresults styling */
+#logresults-wrapper{text-align:center; width:625px; padding:0px 20px 20px 20px; border:solid 1px #ddd;float:left;}
+#logresults{text-align:left; margin:auto;}
+/* disable logsheet styling */
+.disabledlogsheet{background:#f4f4f4;}
+.disabledlogsheet option{background:#efefef; color:#999;}
+.disabledlogsheet textarea{background:#efefef; color:#999;}
+
+#logresults-sidebar{width:188px; float:right;}
+
+#logresults-header{background:url('../images/dash.png') 417px 5px no-repeat; height:80px; position:relative; text-transform:uppercase}
+#logresults-header h1{padding:0px; margin:0px; position:absolute; top:20px; left:0px;}
+#logresults-header #logresults-date{position:absolute; top:25px; right:0px;}
+#logresults-header #logresults-legend{position:absolute; top:45px; right:0px;}
+#logresults-header #logresults-legend span{font-weight:bold; font-size:9px; text-transform:uppercase; display:inline-block; margin:0px 0px 0px 10px;}
+#logresults-header a#logresults-review, .toggleedit{font-size:9px; text-transform:uppercase; text-decoration:none;  position:absolute; top:5px; right:0px;}
+#logresults-header a#logresults-review:hover, , #logresults-header .toggleedit:hover{text-decoration:underline}
+
+
+#logresults-bottom{margin-top:20px; border-top:solid 1px #bfbfbf; position:relative; height:100px;}
+#logresults-workoutnotes{width:280px; position:absolute; left:0px; top:10px;}
+#logresults-workoutnotes span{display:block; text-transform:uppercase;}
+#logresults-workoutnotes textarea{width:280px; height:70px; border:solid 1px #ddd;}
+
+#logresults-abripperx{width:150px; padding:8px; background:#f4f4f4; height:40px; border:solid 1px #ddd; position:absolute; bottom:0px; left:300px;}
+#logresults-abripperx span{display:block; text-transform:uppercase;}
+
+.editbuttons, #buttons{position:absolute; bottom:0px; right:0px; }
+
+#workouts-remaining{text-align:center}
+#workouts-remaining h1{text-align:center; text-transform:uppercase; font-size:15px; padding:0px; margin:0px;}
+#workouts-remaining h1 span{font-size:10px;}
+#workouts-number{background:url('../images/remainingbg.png') top center no-repeat; height:70px; position:relative;}
+#workouts-number span{font-size:43px; font-weight:bold; color:#2c80ae;}
+
+
+#logresults-nav{padding:17px; border:solid 1px #ddd; margin-top:20px;}
+#logresults-nav h1{font-size:12px; padding:0px; margin:0px 0px 5px 0px;}
+#logresults-nav ul li{list-style:none; line-height:1.2em;padding:1px}
+#logresults-nav ul li a{text-transform:uppercase; font-size:10px; text-decoration:none}
+#logresults-nav ul li a:hover{text-decoration:underline}
+
+table.logsheet{border-collapse:collapse; width:100%; font-size:12px;}
+table.logsheet tr.odd{background:#f9f9f9;}
+table.logsheet tr:hover td,table.logsheet tr:hover th{background:#f9f9f9;}
+table.logsheet tr.nohover:hover{background:#fff;}
+
+table.logsheet th, table.logsheet td, table.logsheet td a, table.logsheet span{font-size:12px;text-transform:uppercase; font-weight:normal;white-space:nowrap;}
+
+table.logsheet th.topheader{text-align:center; font-weight:bold; color:#828282; font-size:11px; border-bottom:solid 1px #bfbfbf;}
+table.logsheet th.workoutheader{}
+
+table.logsheet td{ text-align:left; padding:3px 10px 3px 10px;}
+table.logsheet th{text-align:left}
+table.logsheet th span{font-weight:bold;}
+table.logsheet td span{font-weight:bold; font-size:11px; color:#999999;}
+
+table.logsheet span{margin: 0px 7px 0px 7px; display:inline-block;}
+
+input[type="text"].log-small-text{height:22px; width:33px; border:solid 1px #bfbfbf;  font-size:12px; text-align:center;}
+
+.logresults-sidecontainer{padding:17px; text-align:center; font-size:9px; border:solid 1px #ddd; margin-top:20px;}
+.logresults-sidecontainer h2{font-size:12px; text-transform:uppercase;}
+.logresults-sidecontainer h2 span{display:block; font-size:10px; text-transform:uppercase;}
+.logresults-sidecontainer a{text-transform:uppercase; font-size:9px; text-decoration:none;}
+.logresults-sidecontainer a:hover{text-decoration:underline;}
+
+
+#howtologresults{background:#fdfde0; padding:17px; border:solid 1px #ddd; margin-top:20px;}
+#howtologresults p{padding:0px; margin:0px;}
+
+.break{border-top:solid 1px #ddd; margin:30px auto;}
+#togglelastworkout-container{text-align:right}
+#togglelastworkout-container a{border:solid 1px #ddd; padding:3px;text-decoration:none; text-transform:uppercase;font-size:9px;}
+#togglelastworkout-container a:hover{background:#efefef;}
+
+#lastworkoutresults{background:#f4f4f4; padding:20px;}
+#lastworkoutresults h1{font-size:12px; font-weight:bold;text-align:center; padding:10px;}
+
+
+#toggleedit-container{text-align:right;}
+#toggleedit a{font-size:12px;}
+/* end of log results styling */
+
+
+
+
+/* list styling */
+.reviewworkouts{background:url('../images/dashboard-headerbg.png') 320px -5px no-repeat;}
+.reviewworkouts table{border:solid 1px #efefef; width:100%;}
+.reviewworkouts table tr{border:solid 1px #ddd}
+.reviewworkouts table td{border-bottom:solid 1px #ddd; text-align:center; vertical-align:middle;}
+.reviewworkouts table th{border-bottom:solid 2px #ddd; text-transform:uppercase; white-space:nowrap; text-align:center; background:#f4f4f4; font-weight:bold}
+.reviewworkouts table th a{text-transform:uppercase; font-weight:bold}
+.reviewworkouts table a.utilitybuttons{text-transform:none;}
+.reviewworkouts .notes{width:300px; text-align:left;}
+
+
+
+
+/*cycle styling*/
+#crudcycle{border:solid 1px #ddd; padding:30px; width:600px;margin:auto; position:relative}
+/*cycle list specific styling*/
+#list table tr.current{background:#fff;height:70px;}
+#list table tr.current td{font-size:17px; font-weight:bold;}
+#list table tr.old{background:#efefef;height:20px; }
+#list table tr.old td.large, tr.old td{ padding:0px; font-size:10px; color:#999999;  text-transform:lowercase;}
+
+
+
+/* graphing styling */
+#progressleft{background:url('../images/dashboard-headerbg.png') 360px -25px no-repeat;width:640px;float:left;padding:20px; border:solid 1px #ddd; margin-top:20px; position:relative;}
+#progressleft h2{color:#2a2a2b; font-size:20px; font-weight:bold; padding:0px; margin:0px 0px 30px 0px;line-height:1.0em;}
+#progressleft h2 span{display:block}
+#progressleft h2 span.label{display:inline; font-size:20px; font-weight:normal; }
+
+#progressright{width:180px;float:right;}
+#howtoprogress{background:#fdfde0; padding:14px; border:solid 1px #ddd; margin-top:20px;}
+
+.jqplot-title{ padding:3px 0px; margin:5px 0px 0px 0px; color:#151620; line-height:1.3em; text-transform:uppercase;}
+.plot{margin:0px auto 30px auto; background:#f4f4f4;}
+.plot:hover{background:#efefef;}
+.tooltip{font-size:15px; opacity:1.0; background:#fff; color:#333; padding:5px;}
+.tooltip span{display:inline-block; margin:0px 1px 0px 1px;font-size:17px; }
+.tooltip .tooltipnumber{font-weight:bold; color:#2b7fad; font-style:italic;}
+.tooltip .tooltipreps{font-size:8px; text-transform:uppercase; }
+
+
+
+/*dialogbox styling*/
+#dialogbox{position:absolute; top:6px; left:190px; padding:2px 5px 2px 5px;  margin:0px; color:#e7e7ea;  text-transform:uppercase; font-size:9px;background:#5f5f61; border:solid 1px #969697;}
+#dialogbox a{color:#e7e7ea; text-transform:uppercase; font-size:9px;}
+#dialogbox a:hover{text-decoration:underline}
+#dialogbox strong{color:#e7e7ea;font-size:9px; }
+
+
+
+
+/*visitor pages styling*/
+#top{background:#525253 url('../images/topmenubg1.png') top left no-repeat; width:450px; float:right; height:32px;}
+
+#visitor-wrapper{width:902px; margin:auto; position:relative;}
+#visitorleft{float:left; width:383px; position:relative; }
+#visitorright{float:right; width:517px;}
+a#visitorlogo{display:block; height:72px; width:312px; background:url('../images/visitorlogo.png') no-repeat; text-indent:-10000px;}
+p#visitortag{display:block; height:54px; width:383px; background:url('../images/visitortag.png') no-repeat; text-indent:-10000px; }
+a.visitorbottom{display:block; height:68px; width:902px; background:url('../images/visitorbottom.png') no-repeat; text-indent:-10000px;}
+#bottombar{background:url('../images/bottombar.png'); height:72px; width:907px; position:relative;}
+a.bottombarlink{display:block; text-align:center; text-indent:-10000px; height:70px; width:100%; position:absolute; margin:0px 0px 0px 0px }
+a.bottombarlink.register{background:url('../images/bottombar-register.png') 30px 15px no-repeat;}
+a.bottombarlink.dash{background:url('../images/bottombar-dash.png') 80px 18px no-repeat;}
+
+
+a.visitor-register{position:absolute; top:220px; left:10px; padding:5px;}
+a.visitor-dashboard{position:absolute;  top:220px; left:10px; padding:5px;}
+
+
+/*general styling for visitors, searching, and member home (all non profile layouts)*/
+.visitorcontent{background:#fff; padding:20px 30px 70px 30px; background:#fff url('../images/nonprofilecontentbg.png') 25px 10px no-repeat; width:390px; margin:0px auto; position:relative;}
+.visitorcontent h3{text-transform:uppercase; font-size:20px; color:#424242; padding:0px; margin:0px auto 20px auto;  font-weight:normal;}
+
+
+
+/* login style */
+div#login, div#register{background:#fff; padding:20px 30px 30px 30px; background:#fff url('../images/loginbg.png') 50px 10px no-repeat; width:390px; margin:0px auto; position:relative;}
+div#login table{margin:auto;}
+div#login h3, div#register h3{text-transform:uppercase; font-size:20px; color:#424242; padding:0px; margin:0px auto 20px auto; width:300px; font-weight:normal;}
+div#login #buttons, div#register #buttons{margin:0px 55px 15px 0px;}
+div#login input[type="submit"], div#register input[type="submit"]{text-transform:uppercase; font-weight:normal}
+div#register th{text-align:right; padding: 1px 5px 1px 0px;}
+
+div#login #donthaveaccount{margin:5px 0px 0px 40px}
+
+
+
+
+/*search styling */
+#searchresults{}
+#searchresults table{border:solid 1px #efefef; width:100%;}
+#searchresults table tr{border:solid 1px #ddd}
+#searchresults table td{border-bottom:solid 1px #ddd; text-align:center; vertical-align:middle;}
+#searchresults table th{border-bottom:solid 2px #ddd; text-transform:uppercase; white-space:nowrap; text-align:center; background:#f4f4f4; font-weight:bold}
+#searchresults table th a{text-transform:uppercase; font-weight:bold}
+#searchresults table a.utilitybuttons{text-transform:none;}
+#searchresults .notes{width:300px; text-align:left;}
+
+
+
+
+/* profile page styling */
+#profileleft{float:left; width:560px; border:solid 1px #ddd; padding:20px; position:relative;}
+#profileleft #adminlinks{position:absolute; top:10px; right:10px;}
+
+#profileright{float:right; width:250px;}
+#profileleft #profilepic{float:left; height:182px; width:182px; background:#efefef; border:solid 1px #ddd;}
+#profileleft table{border-collapse:collapse; float:left; margin:0px 0px 0px 30px; }
+#profileleft table td{padding:2px 0px 2px 0px}
+#profileleft table th.large{text-align:left; font-size:18px; }
+#profileleft table th{text-align:left;text-transform:uppercase;padding:2px 0px 2px 0px}
+
+.rightside-stuff{padding:15px; border:solid 1px #ddd; margin:0px 0px 20px 0px; }
+
+
+
+/* editprofile stylings */
+#editprofile, #adminedit{position:relative; width:560px; padding:20px 20px 40px 20px; border:solid 1px #ddd; float:left}
+#editprofile h1, #adminedit h1{padding:0px; margin:0px; line-height:1.3em;}
+#editprofile table th, #adminedit table th{text-align:right; padding:2px 5px 2px 0px; vertical-align:middle;}
+textarea.biotextarea{width:300px; height:100px;}
+#editprofile #buttons, #adminedit #buttons{bottom:20px; right:20px;}
+
+
+/* account status styling */
+#accountstatus{}
+.smalltext{font-size:11px;}
+
+.accountstatus{font-size:15px; font-weight:bold; text-transform:uppercase; line-height:1.3em;}
+.accountstatus.active{color:#027d3b;}
+.accountstatus.inactive{color:#a6230e;}
+
+a#activate-account{background:url(../images/activate-account.png) no-repeat; display:block; margin-top:20px; height:91px; width:161px; text-indent:-10000px;}
+
+#activestatus{background:url(../images/account-active.png) no-repeat; padding-left:40px;}
+#activestatus p{padding:0px; margin:0px; line-height:1.3em;}
+
+#inactivestatus{background:url(../images/account-inactive.png) no-repeat; padding-left:40px;}
+#inactivestatus p{padding:0px; margin:0px; line-height:1.3em;}
+
+
+
+/* denied styling */
+#deniedleft{float:left; width:400px;}
+#deniedright{background:url('../images/deniedbg.png') no-repeat;float:right; width:436px; height:402px;}
+
+#deniedleft h1{font-size:36px; font-weight:bold; color:#05689d; padding:0px; margin:0px;}
+#deniedleft h2{font-size:22px; color:#ff0000; font-weight:bold; line-height:1.1em; padding:0px;}
+#deniedleft p{margin-bottom:0px; padding:0px; margin-top:5px;}
+#deniedleft .option{float:left; margin:10px; text-align:center;width:180px;}
+#deniedleft .option h1, #inactivestatus h1{font-size:13px; font-weight:bold; text-align:center; padding:0px; margin:0px;}
+#deniedleft .option p, #inactivestatus p{line-height:1.1em; padding:0px; margin:0px; text-align:center;}
+
+#inactivestatus .option{float:none; margin:15px 0px 10px 0px;}
+
+a.activate{text-indent:-10000px; display:inline-block; height:83px; width:157px; }
+a.activate.year{background:url('../images/activateaccount-yearly.png');}
+a.activate.month{background:url('../images/activateaccount-monthly.png');}
+
+#deniedleft p.help{background:#fdfde0; padding:14px; border:solid 1px #ddd;}
+
+
+
+#broughtittoday{background:url('../images/bringitstatsbg.png');height:48px; width:260px; position:relative; margin-bottom:20px;}
+#broughtittoday span{position:absolute;margin:6px 0px 0px 14px; display:block; font-weight:bold; font-size:22px; color:#fff; }
+
+
+
+
+#homepage{background:url('../images/homepagebg.png') -12px 0px no-repeat; width:100%; height:399px; margin-right:30px;}
+
+/* about page styling */
+#about{color:#fff;}
+#about h1, #about p, #about h2, #about blockquote{color:#fff; font-weight:bold; padding-left:40px;}
+#about h1{margin-bottom:0px;padding:0px;line-height:1.0em;padding-left:40px;}
+#about p{margin:5px 0px 20px 0px}
+#about a{color:#FBA53F}
+
+
+.footerlinks a{color:#808081}
+.footerlinks a:hover{color:#fff; text-decoration:underline;}
+
+/* features styling */
+.feature .left{width:360px; float:left; position:relative;}
+.feature .right{width:520px; float:right; position:relative;}
+.feature .right p{color:#fff; font-weight:bold; line-height:1.3em;}
+
+#featurelogo{background:url('../images/featureslogo.png') no-repeat;width:197px; height:43px; text-indent:-10000px; display:block; margin-bottom:30px;}
+.featuresheader h1{background:url('../images/featuresheader.png') no-repeat; text-indent:-10000px; padding:0px; margin:0px; line-height:1.2em;}
+
+.feature{margin-bottom:10px;}
+.feature .left .descriptiontop{background:url('../images/featuretop.png') no-repeat; width:327px; height:6px; margin-top:20px;}
+.feature .left .descriptionmiddle{background:url('../images/featuremiddle.png') repeat-y; width:297px; padding:15px; }
+.feature .left .descriptionbottom{background:url('../images/featurebottom.png') no-repeat; width:327px; height:7px;}
+
+
+.feature .left .descriptionmiddle p{margin-bottom:10px;}
+.feature .left .descriptionmiddle p,
+.feature .left .descriptionmiddle h2,
+.feature .left .descriptionmiddle p strong{color:#fff; font-weight:bold;}
+
+
+/*thank you styling */
+.thankyouheader h1{color:#fff;padding:0px; margin:0px; line-height:1.2em;}
+
+
+
+
+#howtodashboard-create{background:#fdfde0; float:right; padding:17px; width:217px; border:solid 1px #ddd; margin-top:0px;}
+
+/* redirect styling */
+
+/* about page styling */
+#redirect{color:#fff;}
+#redirect h1, #redirect p, #redirect h2, #redirect blockquote{color:#fff; font-weight:bold; padding-left:40px;}
+#redirect strong{font-weight:bold; color:#fff; font-style:italic}
+#redirect h1{margin-bottom:0px;padding:0px;line-height:1.0em;padding-left:40px;}
+#redirect p{margin:5px 0px 20px 0px}
+#redirect a{color:#FBA53F}
+
+
+/* MESSAGES AND ERRORS */
+
+.message {
+    background: #f3f8fc url(../images/skin/information.png) 8px 50% no-repeat;
+    border: 1px solid #b2d1ff;
+    color: #006dba;
+    margin: 0px 0px 15px 0px;
+    padding: 5px 5px 5px 30px
+}
+
+div.errors {
+    background: #fff3f3;
+    border: 1px solid red;
+    color: #cc0000;
+    margin: 10px 0px 5px 0px;
+    padding: 5px 0px 5px 0px;
+}
+div.errors ul {
+    list-style: none;
+    padding: 0;
+}
+div.errors li {
+    background: url(../images/skin/exclamation.png) 8px 0% no-repeat;
+    line-height: 16px;
+    padding-left: 30px;
+}
+
+td.errors select {
+    border: 1px solid red;
+}
+td.errors input {
+    border: 1px solid red;
+}
+
+
+/* PAGINATION */
+
+.paginateButtons {
+    border-top: 0;
+    color: #666;
+    font-size: 10px;
+    overflow: hidden;
+    padding: 10px 3px;
+}
+.paginateButtons a {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-color: #ccc #aaa #aaa #ccc;
+    color: #666;
+    margin: 0 3px;
+    padding: 2px 6px;
+}
+.paginateButtons span {
+    padding: 2px 3px;
+}

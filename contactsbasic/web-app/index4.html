@@ -1,0 +1,178 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+
+    <title>MyDex</title>
+
+    <link rel="stylesheet" href="/css/silverback/reset.css" />
+    <link rel="stylesheet" href="/css/silverback/main.css" />
+    <link rel="stylesheet" href="/css/silverback/visitorsarea.css" />
+    <link rel="shortcut icon" href="/app/images/favicon.ico" type="image/x-icon" />
+
+
+    <meta content="visitor" name="layout"/>
+
+
+
+    <style type="text/css">
+        #header{height:55px !important;}
+    </style>
+</head>
+
+<body>
+
+
+<!-- container div wraps around page for DD_belatedPNG.fix()-->
+<div class="container" id="visitor-wrapper">
+
+    <!-- start of header -->
+    <div id="header">
+
+        <div id="dialogbox">
+
+
+
+            <a href="/app/login/auth" title="Login">Login</a>
+            &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+            <a href="/app/register/index" title="BringIt : Register Now!">Register Now</a>
+
+        </div>
+
+
+        <div id="top">
+            <div id="membermenu">
+                <ul>
+                    <li><a href="/app" title="BringIt : The P90X Workout Log">Home</a></li>
+                    <li><a href="/app/static/features" title="BringIt : Features">Features</a></li>
+                    <li><a href="/app/static/about" title="BringIt : About">About</a></li>
+
+                </ul>
+            </div>
+
+            <div id="searchbox-wrapper">
+                <form action="/app/account/list" method="get" id="searchableForm" name="searchableForm" >
+                    <input type="text" name="q" value="search members" id="q" /><a href="javascript:search();" title="BringIt : Search Members">Search members</a>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+    <!-- end of header -->
+
+
+
+    <div id="visitorleft">
+        <a href="/app" id="visitorlogo">BringIt : The P90X Workout Log</a>
+
+
+        <p id="visitortag">Bring it is the P90X online workout results log.
+            Start a program and log your results here.</p>
+
+        <a href="/app/register/index" class="utilitybuttons visitor-register dashboard">Register Now</a>
+
+
+
+
+        <div id="broughtittoday"><span>0</span></div>
+    </div>
+
+    <div id="visitorright">
+
+
+
+        <div id="homepage"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="bottombar">
+
+
+
+        <a href="/app/register/index" class="bottombarlink register" title="BringIt : Register Now">Register Now</a>
+
+
+    </div>
+
+
+
+    <div style="width:900px; text-align:left; margin:30px 0px 0px 0px; color:#808081">
+        <p style="width:400px; float:left; color:#808081" class="footerlinks">
+            &copy; 2010 BringIt&nbsp;&nbsp;&nbsp;&nbsp; dev:<a href="http://gfunkmedia.com" target="_blank">g:funkmedia</a>
+        </p>
+
+        <p style="width:400px; float:right; text-align:right;" class="footerlinks">
+            <a href="/app/static/privacypolicy" title="BringIt Privacy Policy">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="mailto:support@ibring.it" title="Contact Us BringIt">Contact Us</a>
+        </p>
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="/js/silverback/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/js/silverback/jquery.wait.js"></script>
+<script type="text/javascript" src="/js/silverback/jquery.progressbar.custom.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $('#q').focus(function() {
+            $('#q').val('');
+        });
+    });
+
+    function search(){
+        document.searchableForm.submit();
+    }
+
+
+    var uservoiceOptions = {
+        /* required */
+        key: 'bringit',
+        host: 'bringit.uservoice.com',
+        forum: '56348',
+        showTab: true,
+        /* optional */
+        alignment: 'left',
+        background_color:'#f00',
+        text_color: 'white',
+        hover_color: '#06C',
+        lang: 'en'
+    };
+
+    function _loadUserVoice() {
+        var s = document.createElement('script');
+        s.setAttribute('type', 'text/javascript');
+        s.setAttribute('src', ("https:" == document.location.protocol ? "https://" : "http://") + "cdn.uservoice.com/javascripts/widgets/tab.js");
+        document.getElementsByTagName('head')[0].appendChild(s);
+    }
+    _loadSuper = window.onload;
+    window.onload = (typeof window.onload != 'function') ? _loadUserVoice : function() { _loadSuper(); _loadUserVoice(); };
+</script>
+
+</div>
+</body>
+</html>

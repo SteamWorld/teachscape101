@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="johanan-lancaons-macbook-pro.local" id="0" name="CsvParseServiceTests" package="com.teachscape" tests="3" time="1.993" timestamp="2013-03-17T17:04:39">
+      <properties />
+
+      <testcase classname="com.teachscape.CsvParseServiceTests" name="testBaseCase" time="0.665" />
+
+      <testcase classname="com.teachscape.CsvParseServiceTests" name="testFixDateFourDigit" time="0.027" />
+
+      <testcase classname="com.teachscape.CsvParseServiceTests" name="testParseCSVFile" time="1.27" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[--Output from testBaseCase--
+--Output from testFixDateFourDigit--
+--Output from testParseCSVFile--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

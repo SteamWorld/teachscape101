@@ -1,0 +1,36 @@
+html{
+    background:#525253 !important;
+}
+
+body{
+    background:#525253 !important;
+}
+
+
+
+
+/*#homepage{width:930px; height:565px; margin:0px auto; position:relative;}*/
+
+a#logo-home,
+p#tagline,
+p#shortsnippet{background:url(../images/homestuff.png) no-repeat;position:absolute; text-indent:-10000px;}
+
+a#logo-home{background-position: -14px 0px; top:40px; left:0px; position:absolute; height:50px; width:200px; display:block; }
+p#tagline{background-position: -240px -10px; height:30px; width:330px; top:70px; }
+p#shortsnippet{background-position:-12px -65px; height:70px; width: 350px; top:110px; }
+
+a.homepagebuttons{background:url(../images/homepagebuttons.png) no-repeat; position:absolute; top:210px; display:block; height:27px;  text-indent:-10000px;}
+a#buyprogram{background-position:0px 0px; width:106px; left:20px;}
+a#buyprogram:hover{background-position:0px -30px; }
+
+#startnow{background-position:-117px 0px; width:75px; left:140px;}
+#startnow:hover{background-position:-117px -30px;}
+
+/*#homepage .dashboard{position:absolute; top:210px; left:80px;}*/
+
+
+#bottombar-link{background:url(../images/visitorbottom.png) 0px -2px no-repeat; position:absolute; bottom:0px; display:block; width:920px; height:84px; text-indent:-10000px;}
+#bottombar-link:hover{background-position: 0px -88px}
+
+
+

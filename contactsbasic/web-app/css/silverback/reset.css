@@ -1,0 +1,183 @@
+/*
+	Great reset css style sheet. Thanks Eric Meyer.
+	Using a customized version of Eric Meyer's CSS Reset to give us an even, cross-browser playing field. More info:
+	http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
+*/
+
+
+div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0px;
+    font-size:11px;
+    font-family: Helvetica, Arial;
+    margin: 0px;
+    outline: 0px;
+    padding: 0px;
+    vertical-align: baseline;
+    color:#464646;
+}
+body {
+    line-height: 1.6;
+}
+
+
+:focus {
+    outline: none;
+}
+
+html, body{
+    height:100%;
+    width:100%;
+    margin:0px;
+    padding:0px;
+    vertical-align: baseline;
+    font-size:11px;
+    font-family: Helvetica, Arial;
+    font-weight:normal;
+    background:#525253;
+}
+
+ul{text-align:left}
+ul li{list-style:none;}
+
+.clear{clear:both}
+
+
+h1{font-size:22px; font-weight:bold; padding:3px 0px; margin:10px 0px 0px 0px; color:#2a2a2b; line-height:1.3em;}
+h1 span{display:block; text-transform:uppercase; font-weight:normal; font-size:12px; line-height:1.2em;}
+h2{font-size:17px; font-weight:bold; padding:0px 0px; margin:0px 0px 0px 0px;line-height:1.3em;color:#2a2a2b;}
+h3{font-size:12px; font-weight:bold; padding:0px 0px; margin:0px 0px 0px 0px;line-height:1.3em;}
+
+
+:focus {
+    outline: none;
+}
+
+
+img{border:none;}
+ul li{list-style:none;}
+
+p{line-height:1.7em; padding:5px 0px; margin:10px 0px;}
+
+input, textarea, select{font-family: Helvetica, Arial; font-size:11px; color:#333; border:solid 1px #ddd;}
+
+input[type="text"]{height:20px;}
+input[type="text"],input[type="password"]{border:solid 1px #ddd; color:#333;height:20px;}
+input[type="text"].small, input[type="password"].small{width:33px;font-size:12px;height:20px;}
+input[type="text"].medium, input[type="password"].medium{width:150px;font-size:12px;height:20px;}
+input[type="text"].large{width:250px; font-size:12px;height:20px;}
+input[type="text"].captcha{width:65px;font-size:12px;height:20px;}
+
+
+/*default table styling*/
+table{border-collapse:collapse}
+table th{text-transform:uppercase;  padding:4px;}
+table td{ padding:4px;}
+th.largetext{font-size:20px; padding:0px 20px 0px 0px;}
+
+
+
+
+strong{font-weight:bold;}
+
+
+a.utilitybuttons, input[type="submit"], input[type="button"]{background:url(../images/utilitybuttons.png) no-repeat; display:inline-block; height:34px; text-indent:-10000px;cursor:pointer;cursor:hand; border:none; padding:0px; margin:0px; line-height:1.0em; font-weight:bold;}
+input[type="submit"], input[type="button"]{padding-top:3px; font-weight:bold;}
+
+a.delete, input[type="submit"].delete, input[type="button"].delete{background-position: 1px 0px;width:70px;}
+a.cancel, input[type="submit"].cancel, input[type="button"].cancel{background-position: -69px 0px; width:67px;}
+a.saveresults, input[type="submit"].saveresults, input[type="button"].saveresults{background-position: -137px 0px; width:106px;}
+a.save, input[type="submit"].save, input[type="button"].save{background-position: -242px 0px; width:52px;}
+a.createaccount, input[type="submit"].createaccount, input[type="button"].createaccount{background-position: -293px 0px; width:130px;}
+a.edit, input[type="submit"].edit, input[type="button"].edit{background-position: -422px 0px; width:51px;}
+a.login, input[type="submit"].login, input[type="button"].login{background-position: -472px 0px; width:58px;}
+a.update, input[type="submit"].update, input[type="button"].update{background-position: -530px 0px; width:63px;}
+a.dashboard, input[type="submit"].dashboard, input[type="button"].dashboard{background-position: -593px 0px; width:96px; }
+
+
+input.save{ padding:3px; font-size:11px; font-weight:bold; color:#fff; text-decoration:none; background:#364c58; border:solid 1px #5ab1e0; text-indent:0px;}
+
+
+a.delete,
+input[type="submit"].delete,
+input[type="button"].delete,
+a.cancel,
+input[type="submit"].cancel,
+input[type="button"].cancel,
+a.saveresults,
+input[type="submit"].saveresults,
+input[type="button"].saveresults,
+a.save,
+input[type="submit"].save,
+input[type="button"].save,
+a.createaccount,
+input[type="submit"].createaccount,
+input[type="button"].createaccount,
+a.edit,
+input[type="submit"].edit,
+a.login,
+input[type="submit"].login,
+input[type="button"].login,
+a.update,
+input[type="submit"].update,
+input[type="button"].update,
+a.dashboard,
+input[type="submit"].dashboard,
+input[type="button"].dashboard{
+    padding:3px 4px 5px 4px;
+    font-size:11px;
+    font-weight:bold;
+    color:#fff;
+    text-decoration:none;
+    background:#05689d;
+    border:solid 1px #5ab1e0;
+    text-indent:0px;
+    height:auto;
+    width:auto;
+}
+
+
+a.delete,
+input[type="submit"].delete,
+input[type="button"].delete,
+a.cancel,
+input[type="submit"].cancel,
+input[type="button"].cancel{
+    background:#B94E2E;
+}
+
+
+a.update,
+input[type="submit"].update,
+input[type="button"].update,
+a.save,
+input[type="submit"].save,
+input[type="button"].save{
+    background:#05689d;
+    border:solid 1px #5ab1e0;
+}
+
+a.orange{background:#F78600; border:solid 1px #FBA53F; font-size:9px}
+
+/** default link styling **/
+a{
+    color:#205876;
+    outline:none;
+    text-decoration:none;
+    font-weight:normal;
+}
+
+a:hover, a:active, a:visited, a:link{
+    outline:none;
+}
+
+
+.uppercase{text-transform:uppercase}
+
